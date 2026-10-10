@@ -1,0 +1,19 @@
+<!doctype html>
+
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>EchoPilot | Voice Command System</title><link rel="stylesheet" href="/static/style.css"></head>
+
+<body><div class="layout"><aside><div class="logo">E</div><h2>EchoPilot</h2><small>VOICE COMMAND SYSTEM</small><p class="nav">⌂ &nbsp; Command Studio</p><div class="sidebottom">● Prototype online<br><br><b>CYPHERS</b><br><small>Hackathon demo</small></div></aside>
+
+<main><header><div><small>AI COMMAND CENTER</small><h1>Command Studio</h1></div><span class="status">● <b id="api">Connecting…</b></span></header>
+
+<section class="hero"><small>SPEAK NATURALLY. GET THE RIGHT ACTION.</small><h1>Your words,<br><em>understood.</em></h1><p>EchoPilot detects supported intents, extracts details, asks for missing information, and previews actions before execution.</p><span class="chip">✦ Intent detection</span><span class="chip">✓ Validation</span><span class="chip">⌁ Clarification</span></section>
+
+<h2>Give EchoPilot a command <small>01 / INPUT</small></h2><section class="card"><label id="miclabel">Ready to listen or type</label><textarea id="cmd" placeholder='Try: "Set a timer for 30 seconds"'></textarea><div class="buttons"><button id="mic">🎙 Start speaking</button><button id="clear">Clear</button><button class="primary" id="go">Interpret command →</button></div><p class="hint">Voice recognition depends on browser support. Timers and reminders require this page to stay open.</p></section>
+
+<div class="cols"><section class="card"><small>UNDERSTANDING</small><h3>Command analysis</h3><div id="analysis" class="empty">Your detected intent and extracted entities will appear here.</div></section><section class="card"><small>VALIDATION</small><h3>Preview & action</h3><div id="preview" class="empty">Your action preview will appear here.</div></section></div>
+
+<section class="card"><small>SUPPORTED EXAMPLES</small><h3>Click to try a command</h3><div class="samples">
+
+<button data-c="Set a timer for 30 seconds">Set a timer for 30 seconds</button><button data-c="Set a timer">Missing timer duration</button><button data-c="5 minutes">Follow-up example (after asking duration)</button><button data-c="Remind me in 1 minute to stretch">Relative reminder</button><button data-c="Take a note: prepare the hackathon demo">Save a note</button><button data-c="Calculate 12 * (3 + 2)">Calculate 12 × (3 + 2)</button><button data-c="Take a note: meeting at 3 pm and set a timer for 10 seconds">Two actions in one command</button><button data-c="What time is it">Tell me the time</button><button data-c="Open example.com">Open a website</button><button data-c="Search for Python tutorials">Search the web</button><button data-c="Help">Show supported commands</button>
+
+</div></section><footer>EchoPilot · AI-Powered Voice Command Intent System <span>Prototype v3.0</span></footer></main></div><script src="/static/app.js"></script></body></html> 
